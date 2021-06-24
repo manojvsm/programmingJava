@@ -29,7 +29,7 @@ public class assignment1 {
 	}
 	public static void main(String args[])
 	{
-		Scanner sc=new Scanner(System.in);
+		/*Scanner sc=new Scanner(System.in);
 		System.out.println("enter the number of array in A element");
 		int arr1=sc.nextInt();
 		
@@ -45,7 +45,9 @@ public class assignment1 {
 		for(int i=0;i<arr2;i++)
 		{
 			b[i]=sc.nextInt();
-		}
+		}*/
+		int a[]={7};
+		int b[]={4,5};
 		System.out.println(Arrays.toString(make2(a,b)));
 	}
 
