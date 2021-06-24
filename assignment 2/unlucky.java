@@ -18,7 +18,7 @@ public class assignment1 {
 		int arr[]=new int[arrlen];
 		for(int i=0;i<arrlen;i++)
 			arr[i]=sc.nextInt();*/
-		int arr[]={2,1,3,5,8,7,9,5};
+		int arr[]={2,1,3,5,8,7,9,5};//else on above
 		if((arr[0]==1&&arr[1]==3)||(arr[1]==1 && arr[2]==3)||(arr[arr.length-3]==1 && arr[arr.length-2]==3)||(arr[arr.length-2]==1 && arr[arr.length-1]==3))
 			System.out.println("true");
 		else
