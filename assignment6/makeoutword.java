@@ -7,42 +7,26 @@ makeOutword("<<>>", "WooHoo") "<<WooHoo>>"
 makeOutword("[[]]", "word") + "[[word]]"
 */
 
-import java.util.Scanner;
 public class assignment1 {
 	
-	static boolean loneteen(int a, int b)
+	static String makeoutword(String a, String b)
 	{
-		if (((a>=13) && (a<=19)) && ((b<13) || (b>19)))   
-			return true;
-		else if(((a<13) || (a>19)) && ((b>=13) && (b<=19))) 
-			return true;
-		else
-			return false;
+		String result=a.substring(0,2) + b + a.substring(2);
+		return result;
 	}
 	public static void main(String args[])
 	{
-		Scanner sc=new Scanner(System.in);
-		int a=sc.nextInt();
-		int b=sc.nextInt();
-		System.out.println(loneteen(a,b));
+		System.out.println(makeoutword("<<>>","yah"));
+		System.out.println(makeoutword("<<>>","woohoo"));
+		System.out.println(makeoutword("[[]]","word"));
 	}
 }
+
+
 /*
 output
 
-15
-15
-false
-
-88
-15
-true
-
-15
-88
-true
-
-99
-77
-false
+<<yah>>
+<<woohoo>>
+[[word]]
 */
